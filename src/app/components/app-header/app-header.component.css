@@ -1,0 +1,44 @@
+.header {
+    margin-bottom:30px
+}
+
+.logo {
+    height: 150px;
+}
+.logo img {
+    width: 160px;
+    height: 75px;
+    float: left;
+    margin: 30px;
+}
+
+.header-buttons {
+    float: none;
+    margin: 30px;
+}
+
+.header-buttons button {
+    color: #fff;
+    height: 70px;
+    min-width: 100px;
+    border: solid 1px #ff0000;
+    background-color: #ff0000;
+    margin: 10px;
+    padding: 10px;
+}
+.margin-right {
+    margin-right: 10px;
+}
+@media (min-width: 768px) {
+    .header-buttons {
+        float: right;
+        margin: 30px 100px;
+    }
+}
+
+@media (min-width: 554px) and (max-width: 768px) {
+    .header-buttons {
+        float: none;
+        margin: 30px;
+    }
+}

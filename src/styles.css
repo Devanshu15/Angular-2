@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0px!important;
+    font-size: 1em;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+button {
+    color: #fff;
+    border: solid 1px #ff0000;
+    background-color: #ff0000;
+    margin: 10px;
+    padding: 10px;
+}
+
+table {
+    border-spacing: 0px;
+    width: 100%;
+}
+
+td,
+th {
+    padding: 5px 30px;
+}
+
+tbody tr:last-child>td {
+    border-top: solid 1px #000;
+}
+
+th {
+    background-color: #808080;
+    color: #ffc9ae;
+    text-align: left;
+}

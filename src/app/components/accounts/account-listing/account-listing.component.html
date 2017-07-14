@@ -1,0 +1,31 @@
+<div class="account-list">
+    <div id="grid-header">
+        <h5 class="pull-left">Accounts</h5>
+        <button class="pull-right" (click)="dataService.refresh()">Refresh</button>
+        <button id="add-account" class="pull-right margin-right" (click)="dataService.addAccount()">Add Account</button>
+    </div>
+    <div class="grid">
+        <table>
+            <tr>
+                <th>NAME</th>
+                <th>MARKET VALUE</th>
+                <th>CASH</th>
+                <th>LEGEND</th>
+            </tr>
+            <tr *ngFor="let account of localAccounts">
+                <td>{{account.name}}</td>
+                <td>{{account.marketValue | currency:'USD':true}}</td>
+                <td>{{account.cash | currency:'USD':true}}</td>
+                <td>
+                    <div class="legend" [style.background-color]="account.legend"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>{{total.name}}</td>
+                <td>{{total.marketValue | currency:'USD':true}}</td>
+                <td>{{total.cash | currency:'USD':true}}</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+</div>
